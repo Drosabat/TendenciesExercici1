@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TendenciesExercici1</string>
+    <string name="hello_world">Hello World</string>
+    <string name="hello">Hola</string>
+    <string name="done">Done</string>
+    <string name="header">HEADER</string>
+    <string name="titulo1">titulo 1</string>
+    <string name="titulo2">titulo 2</string>
+    <string name="text3">text 3</string>
+</resources>
