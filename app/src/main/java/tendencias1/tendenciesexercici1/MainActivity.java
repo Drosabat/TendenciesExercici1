@@ -4,9 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
-import android.widget.EditText;
 
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,12 +13,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    /*public void nuevaPantalla(View view) {
-        //Intent intent = new Intent(this, DisplayMessageActivity.class);
-        //EditText editText = (EditText) findViewById(R.id.edit_message);
-        //String message = editText.getText().toString();
-        //intent.putExtra(EXTRA_MESSAGE, message);
-        //startActivity(intent);
-    }*/
+
+    public void LoginScreen(View view){
+        Intent loginIntent = new Intent(this,LoginActivity.class);
+        startActivity(loginIntent);
+    }
+
+    public void RecoverScreen(View view){
+        Intent recoverIntent = new Intent(this,RecoverActivity.class);
+        startActivity(recoverIntent);
+    }
+
+    @Override
+    public void onBackPressed()
+    {
+        moveTaskToBack(true);
+        finish();
+    }
 
 }
